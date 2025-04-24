@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islamic Book Search</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Islamic Book Search</h2>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="audio.html">Audio Books</a></li>
+      </ul>
+    </nav>
+    <!-- Search Form -->
+    <form id="searchForm">
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="all">All</option>
+        <option value="quran">Quran</option>
+        <option value="hadith">Hadith</option>
+        <option value="history">Islamic History</option>
+        <option value="biography">Biographies</option>
+        <option value="fiqh">Fiqh (Islamic Jurisprudence)</option>
+      </select>
+      
+      <label for="scholar">Scholar/Author:</label>
+      <input type="text" id="scholar" placeholder="e.g., Ibn Kathir">
+      
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="all">All</option>
+        <option value="arabic">Arabic</option>
+        <option value="english">English</option>
+        <option value="urdu">Urdu</option>
+      </select>
+      
+      <label for="minPrice">Minimum Price:</label>
+      <input type="number" id="minPrice" placeholder="e.g., 0">
+      
+      <label for="maxPrice">Maximum Price:</label>
+      <input type="number" id="maxPrice" placeholder="e.g., 30">
+      
+      <button type="submit">Search</button>
+    </form>
+    <!-- Container for the search results -->
+    <div class="book-list" id="bookList"></div>
+  </div>
+</body>
+</html>
+
+
+
